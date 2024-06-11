@@ -14,7 +14,7 @@ const Footer = () => {
                         <ButtonProy hRef="/">Contactanos</ButtonProy>
                         
                     </div>
-                    <hr className="bg-gradient-to-r from-[#00a4fe] to-[#00a5fe7c] h-1 lg:hidden" />
+                    <hr className="bg-gradient-to-r from-zwol-1 to-zwol-1/10 h-1 lg:hidden" />
                     {/* <!--End Col--> */}
                     <div className="lg:mx-auto text-left ">
                         <p className="text-lg text-center lg:text-left text-gray-900 font-medium mt-4 mb-2 lg:mb-7">Zwol</p>
@@ -42,7 +42,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <hr className="bg-gradient-to-r from-[#00a4fe] to-[#00a5fe7c] h-1 lg:hidden" />
+                <hr className="bg-gradient-to-r from-zwol-1 to-zwol-1/10 h-1 lg:hidden" />
                 {/* <!--Grid--> */}
                 <div className="py-7 border-t border-gray-200">
                     <div className="flex items-center justify-center flex-col lg:justify-center lg:flex-row">
