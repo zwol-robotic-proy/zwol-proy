@@ -3,7 +3,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 border-solid border-gray-200 w-screen border-b py-3 hover:bg-white bg-white/80 z-50">
+        <nav className="fixed top-0 w-screen border-solid border-zwol-1/20 border-b py-3 hover:bg-white bg-white/80 z-50">
             <div className="container mx-auto">
                 <div className="w-full grid grid-cols-2">
                     <div className="flex justify-between lg:flex-row">

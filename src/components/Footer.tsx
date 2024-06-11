@@ -3,7 +3,7 @@ import ButtonProy from "./ButtonProy";
 
 const Footer = () => {
     return (
-        <footer className="w-full">
+        <footer className="w-full border-solid border-zwol-1/20 border-t">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* <!--Grid--> */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
