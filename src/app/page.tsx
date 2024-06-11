@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="text-4xl my-14 text-white font-bold select-none">Próximamente</h1>
 
           <div className="grid grid-cols-2 gap-4">
-            <Link href={"mailto:ventas@zwol-robotic.com.ar"} className="border border-gray-300 text-gray-300 bg-transparent rounded-md px-4 py-2 select-none hover:text-black hover:bg-gray-300">Correo</Link>
+            <Link href={"mailto:info@zwol-robotic.com.ar"} className="border border-gray-300 text-gray-300 bg-transparent rounded-md px-4 py-2 select-none hover:text-black hover:bg-gray-300">Correo</Link>
             <Link href={"https://wa.me/5491128721723"} className="border border-green-500 text-green-500 bg-transparent rounded-md px-4 py-2 select-none hover:bg-green-500 hover:text-white">Whatsapp</Link>
           </div>
         </div>
