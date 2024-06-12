@@ -9,7 +9,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center relative justify-between ">
           <img className="max-w-60 select-none pointer-events-none" src="/zwol.png" alt="logo" />
-
+ 
           <h1 className="text-4xl my-14 text-white font-bold select-none">Próximamente</h1>
 
           <div className="grid grid-cols-2 gap-4">
