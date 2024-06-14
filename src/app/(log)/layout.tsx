@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     keywords: "robots industriales, automatización industrial, tecnología robótica, robots para fábricas, Argentina, Zwol-Robotic",
 };
 
-export default function RootLayout({
+export default function AuthLayout({
     children,
-}: Readonly<{
+}: {
     children: React.ReactNode;
-}>) {
+}) {
     return (
         <html lang="es-419">
             <link rel="apple-touch-icon" href="/icon.png" sizes="120x120" />
