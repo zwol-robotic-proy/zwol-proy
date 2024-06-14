@@ -1,4 +1,6 @@
 import ButtonProy from "@/components/ButtonProy";
+import dynamic from 'next/dynamic';
+const NoSSRComponent = dynamic(() => import('@/app/(log)/layout'), { ssr: false });
 
 const LogIn = () => {
     return (
