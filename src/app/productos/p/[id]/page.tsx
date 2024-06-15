@@ -28,7 +28,7 @@ export default function ProductPage({
 
     return (
         <main className='h-screen w-screen flex items-center justify-center flex-col'>
-            <p className='font-extrabold text-6xl mb-16'>Producto</p>
+            <p className='font-extrabold text-6xl mb-16'>Producto {card.id}</p>
             <div className='text-center'>
                 <p>{card.title}</p>
                 <img src={card.IMG} alt={card.title} className='w-40' />

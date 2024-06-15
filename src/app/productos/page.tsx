@@ -22,9 +22,9 @@ const Productos = () => {
             <main className="mt-28 mx-auto max-w-7xl h-screen bg-zwol-1/5">
                 <div className="grid grid-cols-3 gap-7">
                     {
-                        CARSINFO.map((card : CARDS) => (
-                            <Link className="text-center" href={`productos/p/${card.id}`} passHref key={card.id}>
-                                <Card className="border border-transparent hover:border-zwol-1" key={card.id}>
+                        CARSINFO.map((card: CARDS) => {
+                            return <Card className="border border-transparent hover:border-zwol-1" key={card.id}>
+                                <Link className="text-center" href={`productos/p/${card.id}`} passHref>
                                     <CardHeader>
                                         <CardTitle>{card.title}</CardTitle>
                                         <CardDescription>{card.description}</CardDescription>
@@ -32,12 +32,9 @@ const Productos = () => {
                                     <CardContent>
                                         <img src={card.IMG} alt={card.id} />
                                     </CardContent>
-                                    <CardFooter>
-                                        <p>Card Footer</p>
-                                    </CardFooter>
-                                </Card>
-                            </Link>
-                        ))
+                                </Link>
+                            </Card>
+                        })
                     }
                 </div>
             </main>

@@ -21,7 +21,7 @@ export default function ProductModal({
         return null;
     }
   return (
-    <Modal link={card.id}>
+    <Modal>
       {
         <img src={card.IMG} alt={card.title} className='w-80 active:transition-transform active:scale-150 select-none' />
       }
