@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
+
+import CARSINFO from '@/DDBB/CARDS_INFO.json';
+
+interface CARDS {
+    id?: string
+    title?: string
+    description?: string
+    HREF?: string
+    IMG?: string
+}
+
 const Navbar = () => {
     return (
         <nav className="fixed top-0 w-screen border-solid border-zwol-1/20 border-b py-3 hover:bg-white bg-white/80 z-50">
@@ -62,21 +73,19 @@ const Navbar = () => {
                                             <Link className="text-center" href={'/productos'} >Productos</Link>
                                         </DropdownMenuLabel>
                                         <DropdownMenuSeparator />
-                                        <DropdownMenuItem>
-                                            <Link href={'/'} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                                Productos 1
-                                            </Link>
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem>
-                                            <Link href={'/'} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                                Productos 2
-                                            </Link>
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem>
-                                            <Link href={'/'} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                                                Productos 3
-                                            </Link>
-                                        </DropdownMenuItem>
+                                        {
+                                            CARSINFO.map(
+                                                (card: CARDS) => {
+                                                    return (
+                                                        <DropdownMenuItem key={card.id}>
+                                                            <Link href={`/productos/p/${card.id}`} key={card.id} className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                                {card.title}
+                                                            </Link>
+                                                        </DropdownMenuItem>
+                                                    )
+                                                }
+                                            )
+                                        }
                                     </DropdownMenuContent>
                                 </DropdownMenu>
                             </li>
