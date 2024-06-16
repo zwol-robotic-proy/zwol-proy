@@ -1,16 +1,7 @@
 import Link from "next/link";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
-
-
 import CARSINFO from '@/DDBB/CARDS_INFO.json';
-
-interface CARDS {
-    id?: string
-    title?: string
-    description?: string
-    HREF?: string
-    IMG?: string
-}
+import { CARDS } from '@/lib/utils';
 
 const Navbar = () => {
     return (
@@ -120,7 +111,6 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
-
     )
 };
 
