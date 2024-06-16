@@ -1,13 +1,7 @@
 import { Modal } from './modal';
+import { CARDS } from '@/lib/utils';
 import CARSINFO from '@/DDBB/CARDS_INFO.json';
 
-interface CARDS {
-    id?: string
-    title?: string
-    description?: string
-    HREF?: string
-    IMG?: string
-}
 
 export default function ProductModal({
   params: { id: productId },
@@ -22,8 +16,6 @@ export default function ProductModal({
     }
   return (
     <Modal>
-      {
-        <img src={card.IMG} alt={card.title} className='w-80 active:transition-transform active:scale-150 select-none' />
-      }
+        <img src={card.IMG} alt={card.title} className='active:transition-transform active:scale-150 select-none' />
     </Modal>
 )};
