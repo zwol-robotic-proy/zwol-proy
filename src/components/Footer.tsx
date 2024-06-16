@@ -1,9 +1,11 @@
 import Link from "next/link";
 import ButtonProy from "./ButtonProy";
+import { CARDS } from '@/lib/utils';
+import CARSINFO from '@/DDBB/CARDS_INFO.json';
 
 const Footer = () => {
     return (
-        <footer className="w-full border-solid border-zwol-1/20 border-t">
+        <footer className="w-full border-solid border-zwol-1/20 border-t bg-gradient-to-t from-zwol-1 to-zwol-1/10 to-25%">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* <!--Grid--> */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
@@ -27,10 +29,18 @@ const Footer = () => {
                     {/* <!--End Col--> */}
                     <div className="lg:mx-auto text-left">
                         <p className="text-lg text-center lg:text-left text-gray-900 font-medium mt-4 mb-2 lg:mb-7">Productos</p>
-                        <ul className="text-sm text-center lg:text-left transition-all duration-500">
-                            <li className="mb-2 lg:mb-6"><Link href="/" className="text-gray-600 hover:text-gray-900">Robot 1</Link></li>
-                            <li className="mb-2 lg:mb-6"><Link href="/" className=" text-gray-600 hover:text-gray-900">Robot 2</Link></li>
-                            <li><Link href="/" className=" text-gray-600 hover:text-gray-900">Robot 3</Link></li>
+                        <ul className="text-sm text-center lg:text-left transition-all duration-500 ">
+                            {
+                                CARSINFO.map((card:CARDS, i:number) => {
+                                    return(
+                                        <li className={`${i === (CARSINFO.length -1) ? '' : 'mb-2 lg:mb-6'}`} key={card.id}>
+                                            <Link href={`/productos/p/${card.id}`} className={`text-gray-600 hover:text-gray-900`}>
+                                                {card.title}
+                                            </Link>
+                                        </li>
+                                    )
+                                })
+                            }
                         </ul>
                     </div>
                     {/* <!--End Col--> */}
@@ -46,8 +56,8 @@ const Footer = () => {
                 {/* <!--Grid--> */}
                 <div className="py-7 border-t border-gray-200">
                     <div className="flex items-center justify-center flex-col lg:justify-center lg:flex-row">
-                        <span className="text-sm text-gray-500 ">
-                            &copy; {new Date().getFullYear()} || All rights reserved
+                        <span className="text-sm text-gray-100 ">
+                            &copy; ZWOL {new Date().getFullYear()} | All rights reserved
                         </span>
                     </div>
                 </div>

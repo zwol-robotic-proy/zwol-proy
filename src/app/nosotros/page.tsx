@@ -1,5 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { metadata } from "../layout";
+metadata.title = 'Nosotros';
 
 const Nosotros = () => {
     return (
