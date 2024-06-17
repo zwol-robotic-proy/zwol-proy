@@ -11,6 +11,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
     if (!dialogRef.current?.open) {
       dialogRef.current?.showModal();
     }
+    window.scrollTo(0,0)
   }, []);
 
   function onDismiss() {
