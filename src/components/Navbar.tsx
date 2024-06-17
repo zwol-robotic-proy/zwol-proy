@@ -35,7 +35,7 @@ const Navbar = () => {
                                     <DropdownMenuTrigger className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">Nosotros</DropdownMenuTrigger>
                                     <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-md">
                                         <DropdownMenuLabel>
-                                            <Link href={'/nosotros'} >Nosotros</Link>
+                                            <Link className="text-center p-1" href={'/nosotros'} >Nosotros</Link>
                                         </DropdownMenuLabel>
                                         <DropdownMenuSeparator />
                                         <DropdownMenuItem>
@@ -61,7 +61,7 @@ const Navbar = () => {
                                     <DropdownMenuTrigger className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">Productos</DropdownMenuTrigger>
                                     <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-md">
                                         <DropdownMenuLabel>
-                                            <Link className="text-center" href={'/productos'} >Productos</Link>
+                                            <Link className="text-center p-1" href={'/productos'} >Productos</Link>
                                         </DropdownMenuLabel>
                                         <DropdownMenuSeparator />
                                         {
@@ -85,7 +85,7 @@ const Navbar = () => {
                                     <DropdownMenuTrigger className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">Servicios</DropdownMenuTrigger>
                                     <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-md">
                                         <DropdownMenuLabel>
-                                            <Link className="text-center" href={'/servicios'}>Servicios</Link>
+                                            <Link className="text-center p-1" href={'/servicios'}>Servicios</Link>
                                         </DropdownMenuLabel>
                                         <DropdownMenuSeparator />
                                         <DropdownMenuItem>

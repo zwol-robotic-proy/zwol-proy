@@ -1,3 +1,4 @@
+'use client';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,7 +11,7 @@ const Productos = () => {
     return (
         <section className="bg-slate-100">
             <Navbar />
-            <main className="pt-28 mx-auto max-w-7xl h-screen">
+            <main className="py-28 mx-auto max-w-7xl h-full">
                 <div className="grid grid-cols-3 gap-7">
                     {
                         CARSINFO.map((card: CARDS) => {

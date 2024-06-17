@@ -11,14 +11,13 @@ export default function ProductPage({
 
     const card = CARSINFO.find((card: CARDS) => card.id === id);
     const router = useRouter();
+
     function onDismiss() {
         router.back();
       }
-
-    if (!card) {
-        return null;
-    }
-
+      
+    if (!card) return null;
+    
     return (
         <main className='h-screen w-screen flex items-center justify-center flex-col'>
             <div className='justify-center items-center flex flex-col w-screen border-solid border-4 border-t-zwol-1 border-b-zwol-1 pt-10'>
