@@ -96,7 +96,7 @@ const config = {
           9: '9',
         }
       }) 
-    }) 
+    }),
   ],
 } satisfies Config
 
