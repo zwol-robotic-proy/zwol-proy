@@ -1,7 +1,6 @@
-import Link from "next/link";
 import ButtonProy from "./ButtonProy";
-import { CARDS } from '@/lib/utils';
 import CARSINFO from '@/DDBB/CARDS_INFO.json';
+import IndiceFooter from "./IndiceFooter";
 
 const Footer = () => {
     return (
@@ -17,40 +16,9 @@ const Footer = () => {
                         
                     </div>
                     <hr className="bg-gradient-to-r from-zwol-1 to-zwol-1/10 h-1 lg:hidden" />
-                    {/* <!--End Col--> */}
-                    <div className="lg:mx-auto text-left ">
-                        <p className="text-lg text-center lg:text-left text-gray-900 font-medium mt-4 mb-2 lg:mb-7">Zwol</p>
-                        <ul className="text-sm text-center lg:text-left transition-all duration-500">
-                            <li className="mb-2 lg:mb-6"><Link href="/" className="text-gray-600 hover:text-gray-900">Inicio</Link></li>
-                            <li className="mb-2 lg:mb-6"><Link href="/" className=" text-gray-600 hover:text-gray-900">Sobre nosotros</Link></li>
-                            <li><Link href="/" className=" text-gray-600 hover:text-gray-900">Cotizaciones</Link></li>
-                        </ul>
-                    </div>
-                    {/* <!--End Col--> */}
-                    <div className="lg:mx-auto text-left">
-                        <p className="text-lg text-center lg:text-left text-gray-900 font-medium mt-4 mb-2 lg:mb-7">Productos</p>
-                        <ul className="text-sm text-center lg:text-left transition-all duration-500 ">
-                            {
-                                CARSINFO.map((card:CARDS, i:number) => {
-                                    return(
-                                        <li className={`${i === (CARSINFO.length -1) ? '' : 'mb-2 lg:mb-6'}`} key={card.id}>
-                                            <Link href={`/productos/p/${card.id}`} className={`text-gray-600 hover:text-gray-900`}>
-                                                {card.title}
-                                            </Link>
-                                        </li>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
-                    {/* <!--End Col--> */}
-                    <div className="lg:mx-auto text-left">
-                        <p className="text-lg text-center lg:text-left text-gray-900 font-medium mt-4 mb-2 lg:mb-7">Soporte</p>
-                        <ul className="text-sm text-center lg:text-left transition-all duration-500">
-                            <li className="mb-2 lg:mb-6"><Link href="/" className="text-gray-600 hover:text-gray-900">Atención técnica</Link></li>
-                            <li className="mb-2 lg:mb-6"><Link href="/" className=" text-gray-600 hover:text-gray-900">Centro de descarga</Link></li>
-                        </ul>
-                    </div>
+                    <IndiceFooter content={CARSINFO[0].zwol} titleC={'Zwol'} />
+                    <IndiceFooter content={CARSINFO[0].productos} titleC={'Productos'} />
+                    <IndiceFooter content={CARSINFO[0].soporte} titleC={'Soporte'} />
                 </div>
                 <hr className="bg-gradient-to-r from-zwol-1 to-zwol-1/10 h-1 lg:hidden" />
                 {/* <!--Grid--> */}

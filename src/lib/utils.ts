@@ -11,4 +11,5 @@ export interface CARDS {
   Sdescription?: string
   Ldescription?: string
   IMG?: string
+  href?: string
 }
