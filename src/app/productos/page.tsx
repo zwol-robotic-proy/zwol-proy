@@ -1,3 +1,4 @@
+'use client';
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,12 +11,12 @@ const Productos = () => {
     return (
         <section className="bg-slate-100">
             <Navbar />
-            <main className="pt-28 mx-auto max-w-7xl h-screen">
-                <div className="grid grid-cols-3 gap-7">
+            <main className="py-28 mx-auto max-w-7xl h-full">
+                <div className="grid gap-3 sm:gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {
-                        CARSINFO.map((card: CARDS) => {
+                        CARSINFO[0].productos.map((card: CARDS) => {
                             return <Card className="border border-transparent hover:border-zwol-1 hover:bg-zwol-1/10" key={card.id}>
-                                <Link className="text-center" href={`productos/p/${card.id}`} passHref>
+                                <Link className="text-center" href={`${card.href}${card.id}`} passHref>
                                     <CardHeader>
                                         <CardTitle>{card.title}</CardTitle>
                                     </CardHeader>
