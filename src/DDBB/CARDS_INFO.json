@@ -41,30 +41,6 @@
                 "Ldescription": "El FlexiBot Assembler 800 es un robot ensamblador altamente flexible, ideal para aplicaciones que requieren adaptabilidad y rapidez. Su diseño modular permite la integración con diversas herramientas y accesorios, mientras que su sistema de programación intuitivo facilita la rápida configuración y reprogramación para diferentes tareas.",
                 "IMG": "/zwol-nav.png",
                 "href": "/productos/p/"
-            },
-            {
-                "id": "004",
-                "title": "ServoDrive Precision 200",
-                "Sdescription": "Sistema de control de servomotores para aplicaciones de alta precisión.",
-                "Ldescription": "El ServoDrive Precision 200 es un sistema avanzado de control de servomotores, diseñado para aplicaciones industriales que requieren movimientos precisos y controlados. Con capacidad de integración con múltiples tipos de motores y una interfaz de usuario avanzada, ofrece una solución robusta para automatización y control de maquinaria.",
-                "IMG": "/zwol-nav.png",
-                "href": "/productos/p/"
-            },
-            {
-                "id": "005",
-                "title": "MegaLift HeavyDuty 750",
-                "Sdescription": "Plataforma de elevación robótica para manejo de cargas pesadas en entornos industriales.",
-                "Ldescription": " La MegaLift HeavyDuty 750 es una plataforma de elevación robótica diseñada para el manejo seguro y eficiente de cargas pesadas. Capaz de levantar hasta 750 kg, cuenta con sensores de seguridad avanzados y sistemas de control automatizado, proporcionando una solución robusta para tareas de transporte y elevación en plantas industriales.",
-                "IMG": "/zwol-nav.png",
-                "href": "/productos/p/"
-            },
-            {
-                "id": "006",
-                "title": "SmartVision Inspector 400",
-                "Sdescription": "Sistema de inspección visual automatizada para control de calidad en producción.",
-                "Ldescription": "El SmartVision Inspector 400 es un sistema de inspección visual automatizada, ideal para el control de calidad en procesos de producción. Utilizando cámaras de alta resolución y algoritmos de procesamiento de imágenes, detecta defectos y garantiza la conformidad de los productos con los estándares de calidad, mejorando la eficiencia y reduciendo el desperdicio.",
-                "IMG": "/zwol-nav.png",
-                "href": "/productos/p/"
             }
         ],
         "servicios": [
