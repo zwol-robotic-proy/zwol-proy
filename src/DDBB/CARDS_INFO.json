@@ -63,11 +63,16 @@
         "soporte": [
             {
                 "title": "Atención técnica",
-                "href": "/atenciontecnica/"
+                "href": "/servicios/"
             },
             {
                 "title": "Centro de descarga",
-                "href": "/centrodescargas/"
+                "href": "/servicios/"
+            }
+            ,
+            {
+                "title": "Contacto",
+                "href": "/servicios/"
             }
         ],
         "zwol": [
@@ -78,10 +83,6 @@
             {
                 "title": "Sobre nosotros",
                 "href": "/nosotros/"
-            },
-            {
-                "title": "Cotizaciones",
-                "href": "/cotizaciones/"
             }
         ]
     }
