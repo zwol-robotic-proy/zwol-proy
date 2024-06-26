@@ -1,0 +1,89 @@
+[
+    {
+        "nosotros": [
+            {
+                "id": "001",
+                "title": "Nosotros 1",
+                "href": "/nosotros/n/"
+            },
+            {
+                "id": "002",
+                "title": "Nosotros 2",
+                "href": "/nosotros/n/"
+            },
+            {
+                "id": "003",
+                "title": "Nosotros 3",
+                "href": "/nosotros/n/"
+            }
+        ],
+        "productos": [
+            {
+                "id": "001",
+                "title": "RoboArm X5000",
+                "Sdescription": "Brazo robótico de alta precisión para tareas de ensamblaje y manipulación.",
+                "Ldescription": "El RoboArm X5000 es un brazo robótico de última generación diseñado para tareas de ensamblaje y manipulación en entornos industriales. Equipado con sensores de precisión y control avanzado, ofrece una capacidad de carga de hasta 10 kg y un alcance de 1.5 metros, asegurando eficiencia y precisión en cada movimiento.",
+                "IMG": "/zwol-nav.png",
+                "href": "/productos/p/"
+            },
+            {
+                "id": "002",
+                "title": "AutoWeld Pro 300",
+                "Sdescription": "Sistema de soldadura automatizada de alta eficiencia para líneas de producción.",
+                "Ldescription": "El AutoWeld Pro 300 es un sistema de soldadura automatizada diseñado para maximizar la eficiencia en líneas de producción industriales. Con su tecnología de soldadura por arco y control de precisión, puede realizar soldaduras complejas con alta calidad y repetibilidad, reduciendo el tiempo de ciclo y mejorando la productividad.",
+                "IMG": "/zwol-nav.png",
+                "href": "/productos/p/"
+            },
+            {
+                "id": "003",
+                "title": "FlexiBot Assembler 800",
+                "Sdescription": "Robot ensamblador flexible y adaptable para múltiples aplicaciones industriales.",
+                "Ldescription": "El FlexiBot Assembler 800 es un robot ensamblador altamente flexible, ideal para aplicaciones que requieren adaptabilidad y rapidez. Su diseño modular permite la integración con diversas herramientas y accesorios, mientras que su sistema de programación intuitivo facilita la rápida configuración y reprogramación para diferentes tareas.",
+                "IMG": "/zwol-nav.png",
+                "href": "/productos/p/"
+            }
+        ],
+        "servicios": [
+            {
+                "id": "001",
+                "title": "servicios 1",
+                "href": "/servicios/s/"
+            },
+            {
+                "id": "002",
+                "title": "servicios 2",
+                "href": "/servicios/s/"
+            },
+            {
+                "id": "003",
+                "title": "servicios 3",
+                "href": "/servicios/s/"
+            }
+        ],
+        "soporte": [
+            {
+                "title": "Atención técnica",
+                "href": "/servicios/"
+            },
+            {
+                "title": "Centro de descarga",
+                "href": "/servicios/"
+            }
+            ,
+            {
+                "title": "Contacto",
+                "href": "/servicios/"
+            }
+        ],
+        "zwol": [
+            {
+                "title": "Inicio",
+                "href": "/"
+            },
+            {
+                "title": "Sobre nosotros",
+                "href": "/nosotros/"
+            }
+        ]
+    }
+]
