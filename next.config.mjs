@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         remotePatterns: [{
             protocol:'https',
-            hostname:'flowbite.com'
+            hostname:'images.stockcake.com'
         }]
     }
 };
