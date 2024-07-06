@@ -1,13 +1,11 @@
 'use client';
 import Link from "next/link";
-import CARSINFO from '@/DDBB/CARDS_INFO.json';
+import CARDSINFO from '@/DDBB/CARDS_INFO.json';
 import IndiceNavbar from "./IndiceNavbar";
-import { useState } from "react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 const Navbar = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="fixed top-0 w-screen border-solid border-zwol-1/20 border-b py-3 hover:bg-white bg-white/80 z-20">
             <div className="container mx-auto">
@@ -28,11 +26,13 @@ const Navbar = () => {
                                 </div>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="w-60 lg:hidden block mr-7">
-                                <DropdownMenuItem>Nosotros</DropdownMenuItem>
+                                <DropdownMenuItem>
+                                    <Link href={'/nosotros'}>Nosotros</Link> 
+                                </DropdownMenuItem>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuSub>
                                     <DropdownMenuSubTrigger>
-                                        Productos
+                                        <Link href={'/productos'}>Productos</Link>
                                     </DropdownMenuSubTrigger>
                                     <DropdownMenuPortal>
                                         <DropdownMenuContent className="w-60 lg:hidden block ">
@@ -46,7 +46,9 @@ const Navbar = () => {
                                     </DropdownMenuPortal>
                                 </DropdownMenuSub>
                                 <DropdownMenuSeparator />
-                                <DropdownMenuItem>Sericios</DropdownMenuItem>
+                                <DropdownMenuItem>
+                                    <Link href={'/servicios'}>Servicios</Link>
+                                </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </div>
@@ -56,9 +58,9 @@ const Navbar = () => {
                                 <Link href="/" key={"00000001"}
                                     className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">Inicio</Link>
                             </li>
-                            <IndiceNavbar title={'Nosotros'} content={CARSINFO[0].nosotros} />
-                            <IndiceNavbar title={'Productos'} content={CARSINFO[0].productos} />
-                            <IndiceNavbar title={'Servicios'} content={CARSINFO[0].servicios} />
+                            <IndiceNavbar title={'Nosotros'} content={CARDSINFO[0].nosotros} />
+                            <IndiceNavbar title={'Productos'} content={CARDSINFO[0].productos} />
+                            <IndiceNavbar title={'Servicios'} content={CARDSINFO[0].servicios} />
                         </ul>
                     </div>
                 </div>
