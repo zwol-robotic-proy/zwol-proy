@@ -25,7 +25,7 @@ const Servicios = () => {
                                 La sección de atención técnica de zwol-robotic Estamos aquí para ofrecerte asistencia especializada en el uso y mantenimiento de nuestros robots. Nuestro equipo de expertos está disponible para resolver cualquier problema técnico que puedas tener, garantizando el óptimo funcionamiento de tus equipos.
                                 ¡Estamos para ayudarte!
                             </p>
-                            <div className="mt-8">
+                            <div className="mt-8 w-min">
                                 <ButtonProy styleP="text-gray-100 px-5 py-3 font-semibold rounded" hRef="#">
                                     Contactános
                                 </ButtonProy>
@@ -48,7 +48,7 @@ const Servicios = () => {
                             <p className="mt-4 text-gray-600">
                                 Aquí encontrarás todos los recursos necesarios para optimizar el rendimiento de tus robots. Descarga manuales, software de actualización, drivers y guías de usuario de forma rápida y sencilla. Mantente siempre al día con las últimas novedades y mejoras de nuestros productos. Si tienes alguna duda, nuestro equipo de soporte está listo para asistirte. ¡Aprovecha todos nuestros recursos!
                             </p>
-                            <div className="mt-8">
+                            <div className="mt-8 w-min">
                                 <ButtonProy styleP="text-gray-100 px-5 py-3 font-semibold rounded" hRef="#">
                                     Abrir
                                 </ButtonProy>
