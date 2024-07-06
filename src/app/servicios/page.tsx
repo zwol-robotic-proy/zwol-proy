@@ -1,13 +1,14 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { metadata } from "../layout";
+import ButtonProy from "@/components/ButtonProy";
 metadata.title = 'Servicios';
 
 const Servicios = () => {
     return (
         <>
             <Navbar />
-            <main>
+            <main className="my-20">
                 <div className="px-2 py-10 w-full flex justify-center">
                     <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
                         <div className="flex justify-center  lg:w-1/2">
@@ -25,7 +26,9 @@ const Servicios = () => {
                                 ¡Estamos para ayudarte!
                             </p>
                             <div className="mt-8">
-                                <a href="#" className="bg-gray-900 text-gray-100 px-5 py-3 font-semibold rounded">Contactanos</a>
+                                <ButtonProy styleP="text-gray-100 px-5 py-3 font-semibold rounded" hRef="#">
+                                    Contactános
+                                </ButtonProy>
                             </div>
                         </div>
                     </div>
@@ -47,7 +50,9 @@ const Servicios = () => {
                                 Aquí encontrarás todos los recursos necesarios para optimizar el rendimiento de tus robots. Descarga manuales, software de actualización, drivers y guías de usuario de forma rápida y sencilla. Mantente siempre al día con las últimas novedades y mejoras de nuestros productos. Si tienes alguna duda, nuestro equipo de soporte está listo para asistirte. ¡Aprovecha todos nuestros recursos!
                             </p>
                             <div className="mt-8">
-                                <a href="#" className="bg-gray-900 text-gray-100 px-5 py-3 font-semibold rounded">Abrir</a>
+                                <ButtonProy styleP="text-gray-100 px-5 py-3 font-semibold rounded" hRef="#">
+                                    Abrir
+                                </ButtonProy>
                             </div>
                         </div>
                     </div>
