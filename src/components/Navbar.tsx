@@ -27,27 +27,27 @@ const Navbar = () => {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="w-60 lg:hidden block mr-7">
                                 <DropdownMenuItem>
-                                    <Link href={'/nosotros'}>Nosotros</Link> 
+                                    <Link className="w-full" href={'/nosotros'}>Nosotros</Link> 
                                 </DropdownMenuItem>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuSub>
                                     <DropdownMenuSubTrigger>
-                                        <Link href={'/productos'}>Productos</Link>
+                                        <Link className="w-full" href={'/productos'}>Productos</Link>
                                     </DropdownMenuSubTrigger>
                                     <DropdownMenuPortal>
                                         <DropdownMenuContent className="w-60 lg:hidden block ">
                                             <DropdownMenuItem className="pt-2">
-                                                <Link href={'/productos/p/001'}>Robot Cartesiano ZCWUR2M</Link>
+                                                <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCWUR2M</Link>
                                             </DropdownMenuItem>
                                             <DropdownMenuItem className="pt-2">
-                                                <Link href={'/productos/p/001'}>Robot Cartesiano ZCIT00M</Link>
+                                                <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCIT00M</Link>
                                             </DropdownMenuItem>
                                         </DropdownMenuContent>
                                     </DropdownMenuPortal>
                                 </DropdownMenuSub>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuItem>
-                                    <Link href={'/servicios'}>Servicios</Link>
+                                    <Link className="w-full" href={'/servicios'}>Servicios</Link>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
