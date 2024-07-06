@@ -12,7 +12,7 @@ const Banner = () => {
                         <ButtonProy hRef="/" styleP="flex text-center">Showroom</ButtonProy>
                     </div>
                     <div>
-                        <img src="/zwolsold.jpg"  className="flex justify-center mx-auto inline-block h-full w-full md:max-w-lg" />
+                        <img src="/zwolsold.jpg" className="flex justify-center mx-auto h-full w-full md:max-w-lg" />
                     </div>
                 </div>
             </div>

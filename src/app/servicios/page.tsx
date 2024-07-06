@@ -33,10 +33,9 @@ const Servicios = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="px-2 py-10 w-full flex justify-center">
                     <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
-                        <div className="flex justify-center  lg:w-1/2">
+                        <div className="flex justify-center lg:w-1/2">
                             <div className="flex justify-center bg-cover rounded-b-none border lg:rounded-lg">
                                 <img className="object-cover" src="https://images.stockcake.com/public/0/3/2/03242def-10f2-4f65-b333-890f8703b3ce_large/download-icon-design-stockcake.jpg" alt="img" />
                             </div>

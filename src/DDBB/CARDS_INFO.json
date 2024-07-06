@@ -1,22 +1,6 @@
 [
     {
-        "nosotros": [
-            {
-                "id": "001",
-                "title": "Nosotros 1",
-                "href": "/nosotros/n/"
-            },
-            {
-                "id": "002",
-                "title": "Nosotros 2",
-                "href": "/nosotros/n/"
-            },
-            {
-                "id": "003",
-                "title": "Nosotros 3",
-                "href": "/nosotros/n/"
-            }
-        ],
+        "nosotros": [],
         "productos": [
             {
                 "id": "001",
@@ -37,23 +21,7 @@
                 "href": "/productos/p/"
             }
         ],
-        "servicios": [
-            {
-                "id": "001",
-                "title": "servicios 1",
-                "href": "/servicios/s/"
-            },
-            {
-                "id": "002",
-                "title": "servicios 2",
-                "href": "/servicios/s/"
-            },
-            {
-                "id": "003",
-                "title": "servicios 3",
-                "href": "/servicios/s/"
-            }
-        ],
+        "servicios": [],
         "soporte": [
             {
                 "title": "Atención técnica",

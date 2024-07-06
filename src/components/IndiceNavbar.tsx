@@ -5,7 +5,7 @@ import { CARDS } from "@/lib/utils";
 const IndiceNavbar = ({title, content}:{title:string, content:any}) => {
     return (
         <li>
-            <DropdownMenu>
+            <DropdownMenu key={title}>
                 <DropdownMenuTrigger className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">{title}</DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-md">
                     <DropdownMenuLabel>
