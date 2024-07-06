@@ -20,26 +20,20 @@
         "productos": [
             {
                 "id": "001",
-                "title": "RoboArm X5000",
-                "Sdescription": "Brazo robótico de alta precisión para tareas de ensamblaje y manipulación.",
-                "Ldescription": "El RoboArm X5000 es un brazo robótico de última generación diseñado para tareas de ensamblaje y manipulación en entornos industriales. Equipado con sensores de precisión y control avanzado, ofrece una capacidad de carga de hasta 10 kg y un alcance de 1.5 metros, asegurando eficiencia y precisión en cada movimiento.",
-                "IMG": "/zwol-nav.png",
+                "title": "Robot Cartesiano ZCWUR2M",
+                "Sdescription": "Robot de Soldadura con Control Ethercat y Software Intuitivo, Repetitividad de 0.02mm, Velocidad 2m/s",
+                "Ldescription": "Robot de soldadura avanzado con control Ethercat y software intuitivo.Capaz de interpolar ejes simultáneamente, ofrece una repetitividad de 0.02 mm y una velocidad máxima de 2 m/s.Construido con una estructura robusta de perfilaría de acero de ¼ y 5/16 de espesor.Equipado con una pantalla táctil HMI de 19 pulgadas y un SMART TOUCH de 10 pulgadas.Diseñado para procesos de soldadura, permite la conexión vía Ethercat con la fuente de soldadura y el control de JOB programables",
+                "IMG": "/prod/001/0001-1.jpg",
+                "IMG-2": "/prod/001/0001.jpg",
                 "href": "/productos/p/"
             },
             {
                 "id": "002",
-                "title": "AutoWeld Pro 300",
-                "Sdescription": "Sistema de soldadura automatizada de alta eficiencia para líneas de producción.",
-                "Ldescription": "El AutoWeld Pro 300 es un sistema de soldadura automatizada diseñado para maximizar la eficiencia en líneas de producción industriales. Con su tecnología de soldadura por arco y control de precisión, puede realizar soldaduras complejas con alta calidad y repetibilidad, reduciendo el tiempo de ciclo y mejorando la productividad.",
-                "IMG": "/zwol-nav.png",
-                "href": "/productos/p/"
-            },
-            {
-                "id": "003",
-                "title": "FlexiBot Assembler 800",
-                "Sdescription": "Robot ensamblador flexible y adaptable para múltiples aplicaciones industriales.",
-                "Ldescription": "El FlexiBot Assembler 800 es un robot ensamblador altamente flexible, ideal para aplicaciones que requieren adaptabilidad y rapidez. Su diseño modular permite la integración con diversas herramientas y accesorios, mientras que su sistema de programación intuitivo facilita la rápida configuración y reprogramación para diferentes tareas.",
-                "IMG": "/zwol-nav.png",
+                "title": "Robot Cartesiano ZCIT00M",
+                "Sdescription": "Robot de Inyección con Control Ethercat, Software Intuitivo y Estructura Robusta",
+                "Ldescription": "Robot Cartesiano Modelo: ZCIT00M con control Ethercat y software intuitivo. Capaz de interpolar ejes simultáneamente, ofrece una repetitividad de 0.02 mm y una velocidad máxima de 2 m/s. Construido con una estructura robusta de perfilaría de acero de ¼ y 5/16 de espesor. Equipado con una pantalla táctil HMI de 19 pulgadas y un SMART TOUCH de 10 pulgadas. Diseñado específicamente para procesos de inyección, con conexión euromap.",
+                "IMG": "/prod/002/0001-1.jpg",
+                "IMG-2": "/prod/002/0001.jpg",
                 "href": "/productos/p/"
             }
         ],
