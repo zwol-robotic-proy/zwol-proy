@@ -19,8 +19,8 @@ export default function ProductPage({params: { id }}: {params: { id: string }}) 
     return (
         <>
             <Navbar />
-            <main className='h-screen w-screen flex items-center justify-center flex-col my-28'>
-                <div className='justify-center items-center flex flex-col w-screen pt-10'>
+            <main className='h-screen my-36'>
+                <div className='justify-center items-center flex flex-col w-full'>
                     <img src={card.IMG} alt={card.title} className='mb-20 w-4/12' />
                     <p className='mb-5 font-extrabold text-3xl'>{card.title}</p>
                     <p className='mb-10 w-4/12 text-start bg-zwol-1/50 p-3 rounded-b-md'>{card.Ldescription || card.Sdescription}</p>

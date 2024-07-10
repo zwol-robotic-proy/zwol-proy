@@ -32,7 +32,7 @@ const Navbar = () => {
                                 <DropdownMenuSeparator />
                                 <DropdownMenuSub>
                                     <DropdownMenuSubTrigger>
-                                        <Link className="w-full" href={'/productos'}>Productos</Link>
+                                        <Link href={'/productos'}>Productos</Link>
                                     </DropdownMenuSubTrigger>
                                     <DropdownMenuPortal>
                                         <DropdownMenuContent className="w-60 lg:hidden block ">
