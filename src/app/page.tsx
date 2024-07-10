@@ -1,14 +1,16 @@
 import Banner from "@/components/Banner";
+import CarouselComponent from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Carousel from "@/components/Carousel";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main>
-        <Carousel />
+        <div className="flex justify-center w-full">
+          <CarouselComponent />
+        </div>
         <Banner />
       </main>
       <Footer />

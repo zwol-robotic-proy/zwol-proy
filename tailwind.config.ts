@@ -80,6 +80,28 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    plugin(function ({ addVariant }) {
+      addVariant('web-scrollbar', '&::-webkit-scrollbar')
+      addVariant('web-scrollbar-thumb', '&::-webkit-scrollbar-thumb')
+    }),
+    plugin(function ({ addComponents }) {
+      addComponents({
+
+        '.scroll-color': {
+          background: '#00A4FE17',
+          width: '10px',
+          '&:hover': {
+            background: '#00A4FE40'
+          },
+        },
+        '.scroll-thumb-color': {
+          background: 'linear-gradient(284deg, #00A4FE0D 25%, #00A4F980 50%, #00A4FE0D 75%)',
+          '&:hover': {
+            background: 'linear-gradient(284deg, #00A4FE40 25%, #00A4FA 50%, #00A4FE40 75%)'
+          },
+        }
+      })
+    }),
     plugin(function ({matchVariant }) {
       matchVariant('nth', (value: string) => {
         return `&>*:nth-child(${value})`;
