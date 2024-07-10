@@ -2,7 +2,7 @@
 import Link from "next/link";
 import CARDSINFO from '@/DDBB/CARDS_INFO.json';
 import IndiceNavbar from "./IndiceNavbar";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 const Navbar = () => {
 
@@ -31,18 +31,18 @@ const Navbar = () => {
                                 </DropdownMenuItem>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuSub>
-                                    <DropdownMenuSubTrigger>
+                                    <DropdownMenuSubTrigger >
                                         <Link href={'/productos'}>Productos</Link>
                                     </DropdownMenuSubTrigger>
                                     <DropdownMenuPortal>
-                                        <DropdownMenuContent className="w-60 lg:hidden block ">
+                                        <DropdownMenuSubContent className="w-60 lg:hidden block ">
                                             <DropdownMenuItem className="pt-2">
                                                 <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCWUR2M</Link>
                                             </DropdownMenuItem>
                                             <DropdownMenuItem className="pt-2">
                                                 <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCIT00M</Link>
                                             </DropdownMenuItem>
-                                        </DropdownMenuContent>
+                                        </DropdownMenuSubContent>
                                     </DropdownMenuPortal>
                                 </DropdownMenuSub>
                                 <DropdownMenuSeparator />
