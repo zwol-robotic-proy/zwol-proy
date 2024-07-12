@@ -24,7 +24,7 @@ const Productos = () => {
                                         <img src={card.IMG} alt={card.id} />
                                     </CardContent>
                                 </Link>
-                                <CardDescription className="w-[90%] pl-3 justify-center h-20 overflow-y-scroll text-start ml-3 mb-3">{card.Sdescription}</CardDescription>
+                                <CardDescription className="w-[90%] pl-3 justify-center h-20 text-start ml-3 mb-3">{card.Sdescription}</CardDescription>
                             </Card>
                         })
                     }
