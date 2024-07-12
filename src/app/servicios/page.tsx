@@ -18,10 +18,10 @@ const Servicios = () => {
                             </div>
                         </div>
                         <div className="py-12 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none lg:rounded-lg">
-                            <h2 className="text-3xl text-center text-gray-800 font-bold">
+                            <p className="text-3xl text-center text-gray-800 font-bold">
                                 Atención
                                 <span className="text-zwol-1"> Técnica</span>
-                            </h2>
+                            </p>
                             <p className="mt-4 text-gray-600">
                                 La sección de atención técnica de zwol-robotic Estamos aquí para ofrecerte asistencia especializada en el uso y mantenimiento de nuestros robots. Nuestro equipo de expertos está disponible para resolver cualquier problema técnico que puedas tener, garantizando el óptimo funcionamiento de tus equipos.
                                 ¡Estamos para ayudarte!
