@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* <!--Grid--> */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
-                    <div className="flex items-center lg:block col-span-full mb-10 lg:col-span-1 lg:mb-0 nth-2:mx-5">
+                    <div className="flex items-center lg:block col-span-full mb-10 lg:col-span-1 lg:mb-0 nth-3:ml-0 [&_*]:mx-5">
                         <img src="/favicon.ico" alt="logo" className="flex max-w-20 lg:max-w-32 justify-center lg:justify-start select-none" />
                         <p className="py-8 text-xs text-justify lg:text-sm text-gray-500 lg:max-w-xs lg:text-left">
                             Confiable en más de 100 países y con 5 millones de clientes satisfechos. ¿Tienes alguna pregunta? Somos expertos en robótica.</p>

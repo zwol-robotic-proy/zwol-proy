@@ -6,10 +6,10 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export interface CARDS {
-  id: string
+  id?: string
   title: string
   Sdescription?: string
   Ldescription?: string
   IMG?: string
-  href?: string
+  href: string
 }
