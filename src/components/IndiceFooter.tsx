@@ -1,7 +1,7 @@
 import { CARDS } from '@/lib/utils';
 import Link from 'next/link';
 
-const IndiceFooter = ({ content, titleC }: { content: any, titleC: string }) => {
+const IndiceFooter = ({ content, titleC }: { content: CARDS[], titleC: string }) => {
     return (
         <div className="lg:mx-auto text-left">
             <p className="text-lg text-center lg:text-left text-gray-900 font-medium mt-4 mb-2 lg:mb-7">{titleC}</p>

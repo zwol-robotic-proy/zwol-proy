@@ -9,7 +9,7 @@ const Banner = () => {
                         <h1 className="mb-3 pb-4 text-4xl font-bold text-zwol-1 md:text-6xl ">Desarrollando innovación</h1>
                         <p className="mb-6 text-xl md:mb-10 text-justify">Sumérgete en el mundo de la Tecnología con nuestros Robot de Fabricación íntegramente Nacional.
                             Descubre la excelencia, la precisión, innovación y adaptabilidad que estamos dispuestos a compartir, soluciones a la medida de las necesidades, estamos aquí para potenciar le tecnificación de tu empresa, no dudes en consultarnos!</p>
-                        <ButtonProy hRef="/" styleP="flex text-center">Showroom</ButtonProy>
+                        <ButtonProy hRef="/productos" styleP="flex text-center">Showroom</ButtonProy>
                     </div>
                     <div>
                         <img src="/zwolsold.jpg" className="flex justify-center mx-auto h-full w-full md:max-w-lg" />

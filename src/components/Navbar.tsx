@@ -2,7 +2,7 @@
 import Link from "next/link";
 import CARDSINFO from '@/DDBB/CARDS_INFO.json';
 import IndiceNavbar from "./IndiceNavbar";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 const Navbar = () => {
 
@@ -25,24 +25,21 @@ const Navbar = () => {
                                     </svg>
                                 </div>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent className="w-60 lg:hidden block mr-7">
-                                <DropdownMenuItem>
-                                    <Link className="w-full" href={'/nosotros'}>Nosotros</Link> 
-                                </DropdownMenuItem>
+                            <DropdownMenuContent className="w-60 lg:hidden block mr-7">                      
                                 <DropdownMenuSeparator />
                                 <DropdownMenuSub>
                                     <DropdownMenuSubTrigger >
                                         <Link href={'/productos'}>Productos</Link>
                                     </DropdownMenuSubTrigger>
                                     <DropdownMenuPortal>
-                                        <DropdownMenuSubContent className="w-60 lg:hidden block ">
+                                        <DropdownMenuContent className="w-60 lg:hidden block ">
                                             <DropdownMenuItem className="pt-2">
                                                 <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCWUR2M</Link>
                                             </DropdownMenuItem>
                                             <DropdownMenuItem className="pt-2">
                                                 <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCIT00M</Link>
                                             </DropdownMenuItem>
-                                        </DropdownMenuSubContent>
+                                        </DropdownMenuContent>
                                     </DropdownMenuPortal>
                                 </DropdownMenuSub>
                                 <DropdownMenuSeparator />
@@ -54,15 +51,6 @@ const Navbar = () => {
                     </div>
                     <div className="hidden lg:flex lg:pl-11" id="navbar-default-example">
                         <ul className="flex items-center flex-col mt-4 lg:mt-0 lg:ml-auto lg:flex-row gap-10">
-                            <li>
-                                <Link href="/" key={"00000001"}
-                                    className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">Inicio</Link>
-                            </li>
-                            {/* <li className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">
-                                <Link href={'/nosotros'}>
-                                    Nosotros
-                                </Link>
-                            </li> */}
                             <IndiceNavbar title={'Productos'} content={CARDSINFO[0].productos} />
                             <li className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">
                                 <Link href={'/servicios'}>

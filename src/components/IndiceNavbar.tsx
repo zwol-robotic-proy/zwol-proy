@@ -1,17 +1,15 @@
 import Link from "next/link";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { CARDS } from "@/lib/utils";
 
-const IndiceNavbar = ({title, content}:{title:string, content:any}) => {
+const IndiceNavbar = ({title, content}:{title:string, content:CARDS[]}) => {
     return (
         <li>
             <DropdownMenu key={title}>
-                <DropdownMenuTrigger className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">{title}</DropdownMenuTrigger>
+                <DropdownMenuTrigger className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">
+                    {title}
+                </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-md">
-                    <DropdownMenuLabel>
-                        <Link className="text-center p-1" href={`/${title.toLowerCase()}`} >{title}</Link>
-                    </DropdownMenuLabel>
-                    <DropdownMenuSeparator />
                     {
                         content.map(
                             (card: CARDS) => {
