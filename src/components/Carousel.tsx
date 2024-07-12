@@ -17,15 +17,15 @@ const CarouselComponent = () => {
     return (
         <Carousel
             plugins={[plugin.current]}
-            className="h-screen bg-zwol-1/50"
+            className="pt-20"
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
         >
             <CarouselContent>
-                {Array.from({ length: 3 }).map(( _ , index) => (
+                {Array.from({ length: 3 }).map((_, index) => (
                     <CarouselItem key={index} className="pl-0">
                         <div>
-                            <img src={`BANNER/Frame${index+1}.jpg`} alt={`${index+1}`} className="h-screen object-cover" />
+                            <img src={`BANNER/Frame${index + 1}.jpg`} alt={`${index + 1}`} className="object-cover" />
                         </div>
                     </CarouselItem>
                 ))}

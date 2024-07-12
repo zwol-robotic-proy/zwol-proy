@@ -58,11 +58,11 @@ const Navbar = () => {
                                 <Link href="/" key={"00000001"}
                                     className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">Inicio</Link>
                             </li>
-                            <li className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">
+                            {/* <li className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">
                                 <Link href={'/nosotros'}>
                                     Nosotros
                                 </Link>
-                            </li>
+                            </li> */}
                             <IndiceNavbar title={'Productos'} content={CARDSINFO[0].productos} />
                             <li className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">
                                 <Link href={'/servicios'}>
