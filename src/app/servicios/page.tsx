@@ -34,7 +34,9 @@ const Servicios = () => {
                         </div>
                     </div>
                 </div>
-                <ModalDownload/>
+                <div id="modalDownload">
+                    <ModalDownload/>
+                </div>
             </main >
             <Footer />
         </>
