@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { CARDS } from "@/lib/utils";
 
-const IndiceNavbar = ({title, content}:{title:string, content:CARDS[]}) => {
+const IndiceNavbar = ({ title, content }: { title: string, content: CARDS[] }) => {
     return (
         <li>
             <DropdownMenu key={title}>
@@ -10,6 +10,9 @@ const IndiceNavbar = ({title, content}:{title:string, content:CARDS[]}) => {
                     {title}
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg rounded-md">
+                    {
+                        title === 'Productos' ? <><DropdownMenuLabel><Link href={'/productos'}>{title}</Link></DropdownMenuLabel><DropdownMenuSeparator /></> : <div className="hidden" />
+                    }
                     {
                         content.map(
                             (card: CARDS) => {
