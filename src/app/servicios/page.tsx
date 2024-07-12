@@ -27,7 +27,7 @@ const Servicios = () => {
                                 ¡Estamos para ayudarte!
                             </p>
                             <div className="mt-8 w-min">
-                                <ButtonProy styleP="text-gray-100 px-5 py-3 font-semibold rounded" hRef="mailto:info@zwol-robotic.com.ar">
+                                <ButtonProy styleP="text-gray-100 pr-5 py-3 font-semibold rounded" hRef="mailto:info@zwol-robotic.com.ar">
                                     Contactános
                                 </ButtonProy>
                             </div>
