@@ -36,20 +36,44 @@ const ModalDownload = () => {
                 </div>
             </AlertDialogTrigger>
             <AlertDialogContent>
-                <AlertDialogHeader>
-                    <AlertDialogTitle>¿Desea Descargar el archivo?</AlertDialogTitle>
-                    <AlertDialogDescription>
-                        Recuerde que el archivo pesa 1GB de almacenamiento Interno!.
-                    </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                    <AlertDialogCancel className="text-red-600">Cancel</AlertDialogCancel>
-                    <AlertDialogAction className="bg-transparent hover:bg-transparent">
-                        <ButtonProy styleP="text-gray-100 font-semibold rounded" hRef="mailto:info@zwol-robotic.com.ar">
-                            Continuar
-                        </ButtonProy>
-                    </AlertDialogAction>
-                </AlertDialogFooter>
+                <div>
+                    <div className="w-full flex justify-end mb-3">
+                        <AlertDialogCancel className="w-5 h-5 text-red-600 p-2 m-0 border-transparent">X</AlertDialogCancel>
+                    </div>
+                    <div className="overflow-y-scroll h-60">
+                        <div className="mb-16">
+                            <AlertDialogHeader>
+                                <AlertDialogTitle className="text-sm lg:text-base">{'Robot Cartesiano ZCWUR2M'}</AlertDialogTitle>
+                                <AlertDialogDescription className="whitespace-pre-line text-justify">
+                                    <span className="text-xs lg:text-base">{'Descarga nuestro catálogo para más información.\nRobot Cartesiano ZCWUR2M.'}</span>
+                                </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                                <AlertDialogAction className="bg-transparent hover:bg-transparent">
+                                    <ButtonProy styleP="text-gray-100 font-semibold rounded mt-8" hRef="mailto:info@zwol-robotic.com.ar">
+                                        Descargar
+                                    </ButtonProy>
+                                </AlertDialogAction>
+                            </AlertDialogFooter>
+                        </div>
+                        <hr className="bg-zwol-1 h-1" />
+                        <div className="my-5">
+                            <AlertDialogHeader>
+                                <AlertDialogTitle className="text-sm lg:text-base">{'Robot Cartesiano ZCIT00M'}</AlertDialogTitle>
+                                <AlertDialogDescription className="whitespace-pre-line text-justify">
+                                    <span className="text-xs lg:text-base">{'Descarga nuestro catálogo para más información.\nRobot Cartesiano ZCIT00M.'}</span>
+                                </AlertDialogDescription>
+                            </AlertDialogHeader>
+                            <AlertDialogFooter>
+                                <AlertDialogAction className="bg-transparent hover:bg-transparent">
+                                    <ButtonProy styleP="text-gray-100 font-semibold rounded mt-8" hRef="mailto:info@zwol-robotic.com.ar">
+                                        Descargar
+                                    </ButtonProy>
+                                </AlertDialogAction>
+                            </AlertDialogFooter>
+                        </div>
+                    </div>
+                </div>
             </AlertDialogContent>
         </AlertDialog>
     )

@@ -18,7 +18,7 @@ export default function ProdutsLayout(props: {
         <html lang="es-419">
             <link rel="apple-touch-icon" href="/icon.png" sizes="120x120" />
             <link rel="icon" href="/favicon.ico" />
-            <body className={inter.className}>
+            <body className={`${inter.className} web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
                 {props.children}
                 {props.modal}
                 <div id="modal-products" />
