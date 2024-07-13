@@ -40,7 +40,7 @@ const ModalDownload = () => {
                     <div className="w-full flex justify-end mb-3">
                         <AlertDialogCancel className="w-5 h-5 text-red-600 p-2 m-0 border-transparent">X</AlertDialogCancel>
                     </div>
-                    <div className="overflow-y-scroll h-60">
+                    <div className="overflow-y-scroll h-60 mt-10">
                         <div className="mb-16">
                             <AlertDialogHeader>
                                 <AlertDialogTitle className="text-sm lg:text-base">{'Robot Cartesiano ZCWUR2M'}</AlertDialogTitle>
@@ -56,8 +56,8 @@ const ModalDownload = () => {
                                 </AlertDialogAction>
                             </AlertDialogFooter>
                         </div>
-                        <hr className="bg-zwol-1 h-1" />
-                        <div className="my-5">
+                        <hr className="bg-black/50 h-1" />
+                        <div className="mt-5 mb-16">
                             <AlertDialogHeader>
                                 <AlertDialogTitle className="text-sm lg:text-base">{'Robot Cartesiano ZCIT00M'}</AlertDialogTitle>
                                 <AlertDialogDescription className="whitespace-pre-line text-justify">
