@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="flex flex-col items-center lg:block col-span-full mb-10 lg:col-span-1 lg:mb-0 nth-3:mx-0 [&_*]:mx-5">
                         <img src="/favicon.ico" alt="logo" className="flex max-w-20 lg:max-w-32 justify-center lg:justify-start select-none" />
                         <p className="py-8 text-xs text-justify lg:text-sm text-gray-500 lg:max-w-xs lg:text-left">
-                            Confiable en más de 100 países y con 5 millones de clientes satisfechos. ¿Tienes alguna pregunta? Somos expertos en robótica.</p>
+                             ¿Tienes alguna pregunta? Somos expertos en robótica.</p>
                         <ButtonProy hRef="/">Contactanos</ButtonProy>
                         
                     </div>
