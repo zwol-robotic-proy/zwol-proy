@@ -19,7 +19,7 @@ export default function ProductPage({ params: { id } }: { params: { id: string }
     return (
         <>
             <Navbar />
-            <main className='h-full lg:my-36'>
+            <main className='h-full lg:h-screen lg:pt-32'>
                 {/* <div className='justify-center items-center flex flex-col w-full'>
                     <img src={card.IMG} alt={card.title} className='mb-20 mt-[4.5rem] lg:mt-0 lg:w-4/12' />
                     <p className='mb-8 font-extrabold lg:text-3xl'>{card.title}</p>
@@ -31,9 +31,9 @@ export default function ProductPage({ params: { id } }: { params: { id: string }
                     </p>
                     <button className='text-black text-xl absolute top-20 left-3 lg:top-28 lg:left-10 py-1 px-2 border border-solid border-transparent hover:border-zwol-1 rounded-full hover:bg-zwol-1/70  hover:text-white' onClick={onDismiss} >⬅</button>
                 </div> */}
-                <button className=' sticky text-black text-xl absolute top-20 left-3 lg:top-28 lg:left-10 py-1 px-2 border border-solid border-transparent hover:border-zwol-1 rounded-full hover:bg-zwol-1/70  hover:text-white' onClick={onDismiss} >⬅</button>
+                <button className='sticky text-black text-xl top-20 left-3 lg:top-28 lg:left-10 py-1 px-2 border border-solid border-transparent hover:border-zwol-1 rounded-full hover:bg-zwol-1/70  hover:text-white' onClick={onDismiss} >⬅</button>
 
-                <div className=" w-full flex justify-center w-full">
+                <div className=" w-full flex justify-center ">
                     <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
                         <div className="flex justify-center  lg:w-1/2">
                             <div className="flex justify-center bg-cover rounded-b-none border lg:rounded-lg">
