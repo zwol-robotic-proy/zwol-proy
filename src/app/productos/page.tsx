@@ -11,7 +11,7 @@ const Productos = () => {
     return (
         <section className="bg-slate-100">
             <Navbar />
-            <main className="py-28 mt-10 mx-auto max-w-7xl h-full lg:h-screen">
+            <main className=" p-4 mx-auto ">
                 <div className="grid gap-3 sm:gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {
                         CARSINFO[0].productos.map((card: CARDS) => {
@@ -24,7 +24,7 @@ const Productos = () => {
                                         <img src={card.IMG} alt={card.id} />
                                     </CardContent>
                                 </Link>
-                                <CardDescription className="w-[90%] pl-3 justify-center h-20 text-start ml-3 mb-3">{card.Sdescription}</CardDescription>
+                                <CardDescription className="w-[90%] pl-3 h-20 text-start ml-3 mb-3">{card.Sdescription}</CardDescription>
                             </Card>
                         })
                     }

@@ -19,18 +19,7 @@ export default function ProductPage({ params: { id } }: { params: { id: string }
     return (
         <>
             <Navbar />
-            <main className='h-full lg:h-screen lg:pt-32'>
-                {/* <div className='justify-center items-center flex flex-col w-full'>
-                    <img src={card.IMG} alt={card.title} className='mb-20 mt-[4.5rem] lg:mt-0 lg:w-4/12' />
-                    <p className='mb-8 font-extrabold lg:text-3xl'>{card.title}</p>
-                    <p className='mb-10 lg:w-4/12 bg-zwol-1/50 p-3 rounded-b-md flex flex-col text-start [&_span]:mb-2'>
-                        <span className='font-medium'>Descripción:</span> 
-                        <span className='text-sm lg:text-normal'>{card.Ldescription || card.Sdescription}</span>
-                        <span>Tamaño:</span>
-                        <span>{'-'}</span>
-                    </p>
-                    <button className='text-black text-xl absolute top-20 left-3 lg:top-28 lg:left-10 py-1 px-2 border border-solid border-transparent hover:border-zwol-1 rounded-full hover:bg-zwol-1/70  hover:text-white' onClick={onDismiss} >⬅</button>
-                </div> */}
+            <main className='h-full p-4 '>
                 <button className='sticky text-black text-xl top-20 left-3 lg:top-28 lg:left-10 py-1 px-2 border border-solid border-transparent hover:border-zwol-1 rounded-full hover:bg-zwol-1/70  hover:text-white' onClick={onDismiss} >⬅</button>
 
                 <div className=" w-full flex justify-center ">
@@ -40,7 +29,7 @@ export default function ProductPage({ params: { id } }: { params: { id: string }
                                 <img className="object-cover" src={card.IMG} alt={card.title} />
                             </div>
                         </div>
-                        <div className="py-12 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none lg:rounded-lg">
+                        <div className="flow-root sm:contents md:contents lg:flow-root py-12 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none lg:rounded-lg">
                             <p className="text-3xl text-center text-gray-800 font-bold">
                             {card.title}
                             </p>

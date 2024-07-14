@@ -9,8 +9,8 @@ const Servicios = () => {
     return (
         <>
             <Navbar />
-            <main className="my-20">
-                <div className="px-2 py-10 w-full flex justify-center">
+            <main className="p-4">
+                <div className="w-full flex justify-center">
                     <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
                         <div className="flex justify-center  lg:w-1/2">
                             <div className="flex justify-center bg-cover rounded-b-none border lg:rounded-lg">
@@ -27,7 +27,7 @@ const Servicios = () => {
                                 ¡Estamos para ayudarte!
                             </p>
                             <div className="mt-8 w-min">
-                                <ButtonProy styleP="text-gray-100 pr-5 py-3 font-semibold rounded" hRef="mailto:info@zwol-robotic.com.ar">
+                                <ButtonProy styleP="text-gray-100 pr-5 py-3 font-semibold rounded" hRef="mailto:info@zwol-robotic.com.ar" >
                                     Contactános
                                 </ButtonProy>
                             </div>

@@ -17,7 +17,7 @@ const CarouselComponent = () => {
     return (
         <Carousel
             plugins={[plugin.current]}
-            className="pt-[4.4rem]"
+            className=""
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
         >
