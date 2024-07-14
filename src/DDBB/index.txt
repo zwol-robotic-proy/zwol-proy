@@ -1,0 +1,8 @@
+Base de datos
+de donde sacamos algunos de los componentes que sirvieron de ejemplos:
+
+footer:
+https://pagedone.io/blocks/marketing/footer
+
+icons footer con animaciones:
+https://pagedone.io/docs/social-media-icons
