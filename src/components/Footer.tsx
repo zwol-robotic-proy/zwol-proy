@@ -15,7 +15,7 @@ const Footer = () => {
                         <ButtonProy hRef={'/servicios'}>Contactanos</ButtonProy>
 
                     </div>
-                    <hr className="bg-gradient-to-r to-zwol-1/10 from-zwol-1 to-zwol-1/10 h-1 lg:hidden col-span-full lg:col-span-1" />
+                    <hr className="bg-gradient-to-r from-zwol-1 to-zwol-1/10 h-1 lg:hidden col-span-full lg:col-span-1" />
                     <IndiceFooter content={CARSINFO[0].zwol} titleC={'Zwol'} />
                     <IndiceFooter content={CARSINFO[0].productos} titleC={'Productos'} />
                     <IndiceFooter content={CARSINFO[0].soporte} titleC={'Soporte'} />
