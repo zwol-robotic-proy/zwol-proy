@@ -11,12 +11,12 @@ const Productos = () => {
     return (
         <section className="bg-slate-100">
             <Navbar />
-            <main className=" p-4 mx-auto ">
+            <main className="p-4 mx-auto lg:h-screen h-full">
                 <div className="grid gap-3 sm:gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {
                         CARSINFO[0].productos.map((card: CARDS) => {
                             return <Card className="border border-transparent hover:border-zwol-1 hover:bg-zwol-1/10 flex flex-col" key={card.id}>
-                                <Link className="text-center" href={`${card.href}${card.id}`} passHref>
+                                <Link className="text-center" href={`${card.href}`} passHref>
                                     <CardHeader>
                                         <CardTitle>{card.title}</CardTitle>
                                     </CardHeader>

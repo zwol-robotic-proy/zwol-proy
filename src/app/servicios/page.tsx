@@ -12,7 +12,7 @@ const Servicios = () => {
             <main className="p-4">
                 <div className="w-full flex justify-center">
                     <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
-                        <div className="flex justify-center  lg:w-1/2">
+                        <div className="flex justify-center lg:w-1/2">
                             <div className="flex justify-center bg-cover rounded-b-none border lg:rounded-lg">
                                 <img className="object-cover" src="https://images.stockcake.com/public/d/8/b/d8ba2783-27aa-4fcf-80e1-ec9a253a30eb_large/interactive-contact-interface-stockcake.jpg" alt="img" />
                             </div>
