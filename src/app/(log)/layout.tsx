@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AuthLayout({
     children,
 }: {
-    children: React.ReactNode;
+    children: React.ReactNode; 
 }) {
     return (
         <html lang="es-419">
