@@ -9,5 +9,12 @@ const nextConfig = {
             },
         ];
     },
+    images: {
+        remotePatterns: [{
+            protocol: 'https',
+            hostname: 'images.stockcake.com',
+            pathname: '/public/**'
+        }]
+    }
 };
 export default nextConfig;
