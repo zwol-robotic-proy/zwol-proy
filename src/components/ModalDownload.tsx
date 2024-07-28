@@ -10,7 +10,6 @@ import {
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import ButtonProy from "./ButtonProy";
-import Image from "next/image";
 
 const ModalDownload = () => {
     return (
@@ -20,7 +19,7 @@ const ModalDownload = () => {
                     <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg cursor-pointer border border-transparent hover:border-zwol-1 hover:bg-zwol-1/10">
                         <div className="flex justify-center lg:w-1/2">
                             <div className="flex justify-center bg-cover rounded-b-none border lg:rounded-lg">
-                                <Image width={509} height={370} className="object-cover" src="https://images.stockcake.com/public/0/3/2/03242def-10f2-4f65-b333-890f8703b3ce_large/download-icon-design-stockcake.jpg" alt="img03" />
+                                <img className="object-cover" src="https://images.stockcake.com/public/0/3/2/03242def-10f2-4f65-b333-890f8703b3ce_large/download-icon-design-stockcake.jpg" alt="img03" />
                             </div>
                         </div>
                         <div className="py-12 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none lg:rounded-lg">

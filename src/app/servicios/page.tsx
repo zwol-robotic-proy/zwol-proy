@@ -2,7 +2,6 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar"; 
 import ButtonProy from "@/components/ButtonProy";
 import ModalDownload from "@/components/ModalDownload";
-import Image from "next/image";
 
 const Servicios = () => {
     return (
@@ -13,7 +12,7 @@ const Servicios = () => {
                     <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
                         <div className="flex justify-center lg:w-1/2">
                             <div className="flex justify-center bg-cover rounded-b-none border lg:rounded-lg">
-                                <Image width={510} height={406} className="object-cover" src="https://images.stockcake.com/public/d/8/b/d8ba2783-27aa-4fcf-80e1-ec9a253a30eb_large/interactive-contact-interface-stockcake.jpg" alt="img02" />
+                                <img className="object-cover" src="https://images.stockcake.com/public/d/8/b/d8ba2783-27aa-4fcf-80e1-ec9a253a30eb_large/interactive-contact-interface-stockcake.jpg" alt="img02" />
                             </div>
                         </div>
                         <div className="py-12 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none lg:rounded-lg" id="#atencionTecnica">
