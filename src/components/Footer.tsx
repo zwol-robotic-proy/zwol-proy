@@ -2,6 +2,7 @@ import ButtonProy from "./ButtonProy";
 import CARSINFO from '@/DDBB/CARDS_INFO.json';
 import IndiceFooter from "./IndiceFooter";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -10,7 +11,7 @@ const Footer = () => {
                 {/* <!--Grid--> */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 gap-y-8 md:gap-8 pt-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
                     <div className="flex flex-col items-center lg:block col-span-full mb-10 lg:col-span-1 lg:mb-0 nth-3:mx-0 [&_*]:mx-5">
-                        <img src="/favicon.ico" alt="logo" className="flex max-w-20 lg:max-w-32 justify-center lg:justify-start select-none" />
+                        <Image width={256} height={256} src="/favicon.ico" alt="logo" className="flex max-w-20 lg:max-w-32 justify-center lg:justify-start select-none" />
                         <p className="py-8 text-xs text-justify lg:text-sm text-gray-500 lg:max-w-xs lg:text-left">
                             ¿Tienes alguna pregunta? Somos expertos en robótica.</p>
                         <ButtonProy hRef={'/servicios'}>Contactanos</ButtonProy>
