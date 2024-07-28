@@ -6,6 +6,8 @@ import { CARDS } from '@/lib/utils';
 import CARSINFO from '@/DDBB/CARDS_INFO.json';
 import Link from "next/link";
 import React from "react";
+import { metadata } from "@/lib/utils"; 
+metadata.title = 'Productos';
 
 const Productos = () => {
     return (

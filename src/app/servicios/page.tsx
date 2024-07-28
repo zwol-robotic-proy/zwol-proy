@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { metadata } from "../layout";
+import { metadata } from "@/lib/utils"; 
 import ButtonProy from "@/components/ButtonProy";
 import ModalDownload from "@/components/ModalDownload";
 metadata.title = 'Servicios';
@@ -17,7 +17,7 @@ const Servicios = () => {
                                 <img className="object-cover" src="https://images.stockcake.com/public/d/8/b/d8ba2783-27aa-4fcf-80e1-ec9a253a30eb_large/interactive-contact-interface-stockcake.jpg" alt="img" />
                             </div>
                         </div>
-                        <div className="py-12 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none lg:rounded-lg">
+                        <div className="py-12 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none lg:rounded-lg" id="#atencionTecnica">
                             <p className="text-3xl text-center text-gray-800 font-bold">
                                 Atención
                                 <span className="text-zwol-1"> Técnica</span>

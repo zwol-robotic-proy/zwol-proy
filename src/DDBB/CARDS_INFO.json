@@ -25,7 +25,7 @@
             {
                 "id": "01",
                 "title": "Atención técnica",
-                "href": "/servicios/"
+                "href": "/servicios/#atencionTecnica"
             },
             {
                 "id": "02",
@@ -47,7 +47,7 @@
             {
                 "id": "2",
                 "title": "Sobre nosotros",
-                "href": "#"
+                "href": "/"
             }
         ]
     }

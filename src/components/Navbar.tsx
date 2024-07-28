@@ -3,9 +3,19 @@ import Link from "next/link";
 import CARDSINFO from '@/DDBB/CARDS_INFO.json';
 import IndiceNavbar from "./IndiceNavbar";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
 
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) {
+        return null;
+    }
     return (
         <nav className="sticky top-0 w-screen border-solid border-zwol-1/20 border-b py-3 hover:bg-white bg-white/80 z-20">
             <div className="container mx-auto">
@@ -25,23 +35,29 @@ const Navbar = () => {
                                     </svg>
                                 </div>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent className="w-60 lg:hidden block mr-7">                      
+                            <DropdownMenuContent className="w-60 lg:hidden block mr-7">
                                 <DropdownMenuSeparator />
-                                <DropdownMenuSub>
-                                    <DropdownMenuSubTrigger >
-                                        <Link href={'/productos'}>Productos</Link>
-                                    </DropdownMenuSubTrigger>
-                                    <DropdownMenuPortal>
-                                        <DropdownMenuContent className="w-60 lg:hidden block ">
-                                            <DropdownMenuItem className="pt-2">
-                                                <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCWUR2M</Link>
-                                            </DropdownMenuItem>
-                                            <DropdownMenuItem className="pt-2">
-                                                <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCIT00M</Link>
-                                            </DropdownMenuItem>
-                                        </DropdownMenuContent>
-                                    </DropdownMenuPortal>
-                                </DropdownMenuSub>
+                                {
+                                    window.location.pathname.toString() === '/productos/p/001' || window.location.pathname.toString() === '/productos' || window.location.pathname.toString() === '/productos/p/002' ? (
+                                    <DropdownMenuItem>
+                                        <Link className="w-full" href={'/productos'}>Productos</Link>
+                                    </DropdownMenuItem>) : (
+                                    <DropdownMenuSub>
+                                        <DropdownMenuSubTrigger>
+                                            <Link href={'/productos'}>Productos</Link>
+                                        </DropdownMenuSubTrigger>
+                                        <DropdownMenuPortal>
+                                            <DropdownMenuContent className="w-60 lg:hidden block">
+                                                <DropdownMenuItem className="pt-2">
+                                                    <Link className="w-full" href={'/productos/p/001'}>Robot Cartesiano ZCWUR2M</Link>
+                                                </DropdownMenuItem>
+                                                <DropdownMenuItem className="pt-2">
+                                                    <Link className="w-full" href={'/productos/p/002'}>Robot Cartesiano ZCIT00M</Link>
+                                                </DropdownMenuItem>
+                                            </DropdownMenuContent>
+                                        </DropdownMenuPortal>
+                                    </DropdownMenuSub>)
+                                }
                                 <DropdownMenuSeparator />
                                 <DropdownMenuItem>
                                     <Link className="w-full" href={'/servicios'}>Servicios</Link>

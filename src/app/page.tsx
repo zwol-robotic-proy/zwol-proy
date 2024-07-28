@@ -1,8 +1,9 @@
+'use client';
 import Banner from "@/components/Banner";
 import CarouselComponent from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { metadata } from "./layout";
+import { metadata } from "@/lib/utils";
 metadata.title = 'Inicio';
 
 export default function Home() {

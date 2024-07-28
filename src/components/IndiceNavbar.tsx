@@ -17,7 +17,7 @@ const IndiceNavbar = ({ title, content }: { title: string, content: CARDS[] }) =
     return (
         <li>
             {
-            window.location.pathname.toString() === '/productos/p/001' || window.location.pathname.toString() === '/productos/p/002' ? <Link href={`/productos`}>{title}</Link> : (
+            window.location.pathname.toString() === '/productos/p/001' || window.location.pathname.toString() === '/productos/' || window.location.pathname.toString() === '/productos/p/002' ? <Link href={`/productos`}>{title}</Link> : (
                 <DropdownMenu key={title}>
                     <DropdownMenuTrigger className="text-gray-600 text-sm lg:text-base font-medium hover:text-zwol-1 transition-all duration-500">
                         {title}

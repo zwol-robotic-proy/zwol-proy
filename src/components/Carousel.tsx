@@ -7,6 +7,7 @@ import {
     CarouselContent,
     CarouselItem
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 
 const CarouselComponent = () => {
@@ -25,7 +26,7 @@ const CarouselComponent = () => {
                 {Array.from({ length: 3 }).map((_, index) => (
                     <CarouselItem key={index} className="pl-0">
                         <div>
-                            <img src={`BANNER/Frame${index + 1}.jpg`} alt={`${index + 1}`} className="object-cover" />
+                            <Image src={`/BANNER/Frame${index + 1}.jpg`} alt={`${index + 1}`} className="object-cover" width={4102} height={1517} />
                         </div>
                     </CarouselItem>
                 ))}
