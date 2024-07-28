@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { metadata } from "../layout";
+import { metadata } from "@/lib/utils"; 
 metadata.title = 'Atención Técnica';
 
 const Nosotros = () => {
