@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ButtonProy from "./ButtonProy";
 
 const Banner = () => {
@@ -15,7 +16,7 @@ const Banner = () => {
                         <ButtonProy hRef="/productos" styleP="flex text-center">Showroom</ButtonProy>
                     </div>
                     <div>
-                        <img src="/zwolsold.jpg" className="flex justify-center mx-auto h-full w-full md:max-w-lg" />
+                        <Image alt="foto-robot01" width={739} height={944} src="/zwolsold.jpg" className="flex justify-center mx-auto h-full w-full md:max-w-lg" />
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import CARDSINFO from '@/DDBB/CARDS_INFO.json';
 import IndiceNavbar from "./IndiceNavbar";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
 
@@ -22,7 +23,7 @@ const Navbar = () => {
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2">
                     <div className="flex justify-between lg:flex-row">
                         <Link href={"/"} className="flex items-center">
-                            <img src="/zwol-nav.png" alt="logo" className="max-w-20" />
+                            <Image width={1920} height={1080} src="/zwol-nav.png" alt="logo" className="max-w-20" />
                         </Link>
                         <DropdownMenu>
                             <DropdownMenuTrigger>
