@@ -1,9 +1,7 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import { metadata } from "@/lib/utils"; 
+import Navbar from "@/components/Navbar"; 
 import ButtonProy from "@/components/ButtonProy";
 import ModalDownload from "@/components/ModalDownload";
-metadata.title = 'Servicios';
 
 const Servicios = () => {
     return (
