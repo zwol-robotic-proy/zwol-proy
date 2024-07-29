@@ -10,7 +10,7 @@ export default function ProductModal({ params: { id: productId } }: { params: { 
 
   return (
     <Modal>
-      <div className="snap-x flex snap-mandatory h-full w-full mx-auto overflow-x-scroll">
+      <div className="snap-x flex snap-mandatory h-full w-full mx-auto overflow-x-scroll overflow-y-hidden">
         <div className="snap-center snap-always w-full h-full flex-shrink-0 flex items-center justify-center">
           <Image width={1900} height={1900} alt={`${productId}01`} src={`/prod/${productId}/0001-1.jpg`} priority />
         </div>
